@@ -7,15 +7,17 @@
 
   "layout": {
       "gridSize" : { "columns" : 20, "rows" : 12 },
-      "customJS" : ["test.js"],
+      "customJS" : [
+        "d3.min.js",
+        "nv.d3.min.js"
+      ],
       "widgets" : [
-        {"row" : 1, "col" : 1, "width" : 20, "height" : 12, "widget" : "timer", "job" : "timerJob", "config": "quotes"}
+        {"row" : 1, "col" : 1, "width" : 7, "height" : 6, "widget" : "timer", "job" : "timerjob", "config": "quotes"}
       ]
   },
 
   "config": {
       "quotes" : {
-        "interval" : 10000
       }
   }
 }
